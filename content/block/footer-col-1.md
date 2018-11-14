@@ -1,3 +1,3 @@
-#### Footer col 1
+#### Studier
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Läser webbprogrammerare på BTH i Karlskrona. Denna sidan är en del av kursen Design.

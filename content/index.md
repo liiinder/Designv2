@@ -1,25 +1,25 @@
 ---
-title: "Min fina titel"
+title: "linder"
+views:
+    redovisa:
+        region: after-main
+        template: anax/v2/block/default
+        data:
+            meta: 
+                type: single
+                route: block/byline
 ---
-Min me-sida i kursen design
+Me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+[FIGURE src="image/kristoffer.png?w=300" class="right" caption="En väldigt uppklädd kristoffer"]
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+Kristoffer Linder heter jag, är född i Falköping men flyttade till Åre för att åka snowboard då det va en av dom bästa sakerna jag visste om.
+Kör taxi för att få livet att gå runt och pluggar även webbprogrammering på distans från BTH på heltid.
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Började surfa för 5 år sen och sen dess är nog sommaren min nya favorit årstid, kompletterade surfen med kite för 2 år sen för att kunna vara på vattnet på hemmaplan.
+Den planen backfireade och har tagit över allt mer och mer! Den fick mig att bygga en egen husbil så jag kan åka runt och bo precis vart som helst för att på billigaste möjliga sätt utöva mina aktiviteter. Ironiskt nog kostade det ju väldigt mycket pengar för att bygga bilen så man hade fått rätt många vandrarhemsnätter för dom pengarna.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Vi syns och hörs på Gitter!
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
-
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+/Kristoffer
