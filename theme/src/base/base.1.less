@@ -1,0 +1,81 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+         display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@lightGreen: #e7f3df;
+@primaryGreen: #b0d996;
+@darkGreen: #7B9769;
+@lightGrey: #ddd;
+@darkGrey: #333;
+@fontFamilyBody: 'Roboto', sans-serif;
+@maxWidth: 1100px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: @primaryGreen;
+}
+
+body {
+    margin: 10px auto;
+    padding: 0;
+    color: @darkGrey;
+    background-color: @lightGrey;
+    font: 100.01%/1 @fontFamilyBody;
+    max-width: @maxWidth;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 0 0.25rem 0 0;
+}
+
+/* Texts */
+a {
+    color: @darkGrey;
+    text-decoration-color: @darkGreen;
+}
+
+h1,
+h2 {
+    margin-bottom: 0.4rem;
+}
+
+h3,
+h4 {
+    margin: 1rem 0 0.2rem;
+    line-height: 1.4;
+}
+
+h4:first-of-type {
+    margin-top: 0.4rem;
+}
+
+p {
+    margin: 0.2rem 0 0;
+    line-height: 1.4;
+}
+
+code {
+    background: @lightGreen;
+    padding: 0.1rem 0.25rem;
+    border: 1px solid @darkGreen;
+}

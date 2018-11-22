@@ -1,0 +1,265 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #b0d996;
+}
+body {
+  margin: 10px auto;
+  padding: 0;
+  color: #333;
+  background-color: #ddd;
+  font: 100.01%/1 'Roboto', sans-serif;
+  max-width: 1100px;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin: 0 0.25rem 0 0;
+}
+/* Texts */
+a {
+  color: #333;
+  text-decoration-color: #7B9769;
+}
+h1,
+h2 {
+  margin-bottom: 0.4rem;
+}
+h3,
+h4 {
+  margin: 1rem 0 0.2rem;
+  line-height: 1.4;
+}
+h4:first-of-type {
+  margin-top: 0.4rem;
+}
+p {
+  margin: 0.2rem 0 0;
+  line-height: 1.4;
+}
+code {
+  background: #e7f3df;
+  padding: 0.1rem 0.25rem;
+  border: 1px solid #7B9769;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/* General */
+.outer-wrap {
+  max-width: 100%;
+  padding: 0.5rem;
+}
+.inner-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* Header */
+.region-header {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.site-logo img {
+  overflow: auto;
+  width: 0%;
+  height: 0%;
+}
+.site-logo-text {
+  float: right;
+  font-size: 1.5rem;
+}
+.site-logo-text a {
+  text-decoration: none;
+}
+.my-navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.my-navbar li {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background-color: #e7f3df;
+  border: 1px solid #7B9769;
+}
+.my-navbar a {
+  text-decoration: none;
+}
+/* Flash */
+.region-flash {
+  max-width: 100%;
+  max-height: 150px;
+}
+.region-flash img {
+  max-width: 100%;
+}
+.outer-wrap-flash {
+  padding: 0;
+}
+/* Breadcrumb */
+.breadcrumb-list li {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: #e7f3df;
+  border: 1px solid #7B9769;
+}
+.breadcrumb-list a {
+  text-decoration: none;
+}
+/* Main */
+.region-main {
+  min-height: 225px;
+  overflow: auto;
+}
+.next-previous {
+  display: inline-block;
+  width: 100%;
+}
+.next-previous a {
+  text-decoration: none;
+}
+.right,
+.next {
+  float: right;
+  margin-left: 0.5rem;
+}
+.left,
+.region-sidebar-left,
+.previous {
+  float: left;
+  margin-right: 0.5rem;
+}
+.next,
+.previous {
+  padding: 0.5rem 0.75rem;
+  background-color: #e7f3df;
+  border: 1px solid #7B9769;
+}
+/*  */
+.region-after-main {
+  padding: 0.5rem 0 0;
+  overflow: hidden;
+  height: 108px;
+}
+.region-after-main h1 {
+  margin-top: 0;
+}
+/* Footer */
+.outer-wrap-footer {
+  width: 100%;
+}
+.footer-column-wrapper {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-column {
+  border: 1px solid #333;
+  background: #b0d996;
+  padding: 0.5rem;
+}
+.footer-column h4 {
+  text-align: center;
+}
+.site-footer {
+  /* padding: 0.5rem; */
+  text-align: center;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 850px) {
+  .region-header-col-2 {
+    display: none;
+  }
+  .region-header-col-3 {
+    display: block;
+    float: right;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */

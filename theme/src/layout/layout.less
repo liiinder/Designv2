@@ -1,0 +1,188 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+/* General */
+.outer-wrap {
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+.inner-wrap {
+    max-width: @maxWidth;
+    margin: 0 auto;
+}
+
+.row::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* Header */
+.region-header {
+    display: inline-block;
+    width: 100%;
+}
+
+// site logo
+.region-header-col-1 {
+    display: block;
+    float: left;
+    
+    .site-logo {
+        display: none;
+    }
+    
+    .site-logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+// main menu
+.region-header-col-2 {
+    display: block;
+    float: right;
+}
+
+// responsive menu
+.region-header-col-3 {
+    display: none;
+}
+
+
+.site-logo-text a {
+    text-decoration: none;
+}
+
+.my-navbar li {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: @lightGreen;
+    border: 1px solid @darkGreen;
+}
+
+.my-navbar a {
+    text-decoration: none;
+}
+
+/* Flash */
+.region-flash {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.region-flash img {
+    max-width: 100%;
+}
+
+.outer-wrap-flash {
+    padding: 0;
+}
+
+/* Breadcrumb */
+.breadcrumb-list li {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: @lightGreen;
+    border: 1px solid @darkGreen;
+}
+
+.breadcrumb-list a {
+    text-decoration: none;
+}
+
+/* Main */
+
+.region-main {
+    display: inline-block;
+}
+
+.has-sidebar-left,
+.has-sidebar-right {
+    width: 79%;
+}
+
+
+.region-main.has-sidebar-left.has-sidebar-right {
+    width: 57%;
+}
+
+.region-sidebar-right,
+.region-sidebar-left {
+    width: 18%;
+}
+
+.next-previous {
+    display: inline-block;
+    width: 100%;
+}
+
+.next-previous a {
+    text-decoration: none;
+}
+
+.right,
+.region-sidebar-right,
+.next {
+    display: block;
+    float: right;
+    margin-left: 0.5%;
+}
+
+.left,
+.region-sidebar-left,
+.previous {
+    display: block;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.next,
+.previous {
+    padding: 0.5rem 0.75rem;
+    background-color: @lightGreen;
+    border: 1px solid @darkGreen;
+}
+
+/*  */
+.region-after-main {
+    padding: 0.5rem 0 0;
+    overflow: hidden;
+    height: 108px;
+}
+
+.region-after-main h1 {
+    margin-top: 0;
+}
+
+/* Footer */
+.outer-wrap-footer {
+    width: 100%;
+}
+
+.footer-column-wrapper {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-column {
+    border: 1px solid @darkGrey; 
+    background: @primaryGreen;
+    padding: 0.5rem;
+}
+
+.footer-column h4 {
+    text-align: center;
+}
+
+.site-footer {
+    /* padding: 0.5rem; */
+    text-align: center;
+}

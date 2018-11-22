@@ -1,0 +1,49 @@
+/*!
+ * LESS version of the stylesheet for design kmom02.
+ *
+ * This stylesheet is for the design course and kmom02. Its intention is to
+ * use less and build the style using modules like base, layout, responsive etc.
+ */
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+// @import "base/base_default.less";
+@import "base/base.less";
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+// @import "layout/layout_default.less";
+// @import "layout/responsive_default.less";
+@import "layout/layout.less";
+@import "layout/responsive.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+/**
+ * My own settings, not currently in their own module.
+ */
