@@ -1,0 +1,34 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: @lightGrey;
+}
+
+body {
+    color: @darkGrey;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+/* Texts */
+a {
+    color: @darkGrey;
+    text-decoration-color: @darkGreen;
+}
+
+code {
+    // background: @lightGreen;
+    border: 1px solid @darkGreen;
+}
+
+h4 {
+    border-bottom: 1px solid @darkGrey;
+}
