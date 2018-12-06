@@ -4653,10 +4653,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   box-sizing: border-box;
 }
 html {
-  background-color: #eee;
+  background-color: #333;
 }
 body {
-  color: #333;
+  color: #ccc;
   font: 16px/1.5 "Helvetica";
 }
 h1,
@@ -4945,15 +4945,15 @@ hr::after {
 }
 /* Texts */
 a {
-  color: #333;
-  text-decoration-color: #7B9769;
+  color: #ccc;
+  text-decoration-color: #6e875e;
 }
 code {
-  background: #b0d996;
-  border: 1px solid #7B9769;
+  background: #495a3f;
+  border: 1px solid #6e875e;
 }
 h4 {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ccc;
 }
 /**
 * Layout style for general structure of header, navbar, main, footer
@@ -5045,15 +5045,15 @@ h4 {
 }
 .my-navbar li {
   display: inline-block;
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #313c2a;
+  border: 1px solid #ccc;
   margin-right: 0.5em;
 }
 .rm-default li li {
   border: none;
 }
 .rm-default li ul {
-  border: 1px solid #333;
+  border: 1px solid #ccc;
 }
 .rm-default ul li {
   box-shadow: none;
@@ -5074,8 +5074,8 @@ h4 {
 }
 /* Breadcrumb */
 .region-breadcrumb {
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #313c2a;
+  border: 1px solid #ccc;
   display: inline;
   float: left;
   width: 97.91666667%;
@@ -5095,8 +5095,8 @@ h4 {
   width: 97.91666667%;
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #313c2a;
+  border: 1px solid #ccc;
   padding: 0 0.5em;
 }
 .has-sidebar-left,
@@ -5171,8 +5171,8 @@ h4 {
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
   min-height: 175px;
-  border: 1px solid #333;
-  background: #b0d996;
+  border: 1px solid #ccc;
+  background: #495a3f;
   padding: 0.5rem;
 }
 .footer-column h4:first-of-type {
@@ -5288,4 +5288,7 @@ h4 {
 /**
  * My own settings, not currently in their own module.
  */
-/* variables */
+/* variables 
+Using the same variable names as the regular style so I
+dont have to change in the base.3.less file.
+*/

@@ -1,0 +1,76 @@
+/*!
+ * LESS version of the stylesheet for design kmom03.
+ *
+ * This stylesheet is for the design course and kmom03. Its intention is to
+ * use less and build the style using modules like base, layout, responsive etc.
+ * In this kmom we're going to learn about vertical grid.
+ */
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+// @import "base/base_default.less";
+@import "base/base.3.less";
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+@import "layout/layout.3.less";
+@import "layout/responsive.3.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+/* variables 
+Using the same variable names as the regular style so I
+dont have to change in the base.3.less file.
+*/
+@lightGreen: #313c2a; // primary color
+@primaryGreen: #495a3f; // dark color
+@darkGreen: #6e875e; // light color
+@lightGrey: #333; // dark gray
+@darkGrey: #ccc; // light gray
+@maxWidth: 1100px; // width of page (flash to footer)
+
+// Default grid, change to fit your requirements.
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       12;
+@gridType:      "float"; // "flex"

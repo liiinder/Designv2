@@ -1,0 +1,162 @@
+/*!
+ * LESS version of the stylesheet for design kmom03.
+ *
+ * This stylesheet is for the design course and kmom03. Its intention is to
+ * use less and build the style using modules like base, layout, responsive etc.
+ * In this kmom we're going to learn about vertical grid.
+ */
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+// @import "base/base_default.less";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: @htmlbackground;
+}
+
+body {
+    color: @grey;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+/* Texts */
+a {
+    text-decoration-color: @darkGreen;
+}
+
+a:visited {
+    color: @grey;
+}
+
+code {
+    background: @primaryGreen;
+    border: 1px solid @darkGreen;
+}
+
+h4 {
+    border-bottom: 1px solid @darkGrey;
+}
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+@import "layout/layout.3.less";
+@import "layout/responsive.3.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+/* variables */
+@htmlbackground: #70e89e;
+@lightGreen: #de99ff;
+@primaryGreen: #707beb;
+@darkGreen: #88ebff;
+@lightGrey: #70e89e;
+@darkGrey: #bdff78; // text color ... 
+@grey: #333;
+
+@maxWidth: 1100px; // width of page (flash to footer)
+
+// Default grid, change to fit your requirements.
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       12;
+@gridType:      "float"; // "flex"
+
+// colorful style
+.inner-wrap,
+.footer-column,
+.region-sidebar-right,
+.region-sidebar-left {
+    background-color: @lightGreen;
+}
+
+.inner-wrap-footer,
+.inner-wrap-header,
+.inner-wrap-flash {
+    background-color: transparent;
+}
+
+.my-navbar li a {
+    font-weight: bold;
+}
+
+.outer-wrap-header {
+    margin-top: 0.75em;
+}
+
+.inner-wrap-flash .row {
+    margin-bottom: 6px;
+}
+
+.region-main {
+    border: none;
+}
+
+.inner-wrap-main {
+    padding: 0.5em 0;
+    border: 1px solid @darkGrey;
+}
+
+.site-logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.region-after-main {
+    padding: 0.5em;
+}
+
+.outer-wrap-footer {
+    margin-top: 0.5em;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@fontFamilyHeadings: "Amatic SC";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@fontFamilyBody: 'Open Sans Condensed', sans-serif;
+@fontSizeBody: 20px;

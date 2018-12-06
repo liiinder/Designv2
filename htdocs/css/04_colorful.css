@@ -4646,18 +4646,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * Base style to affect HTML elements on a general scale.
  */
-/**
- * Base style to affect HTML elements on a general scale.
- */
 * {
   box-sizing: border-box;
 }
 html {
-  background-color: #eee;
+  background-color: #70e89e;
 }
 body {
   color: #333;
-  font: 16px/1.5 "Helvetica";
+  font: 20px/1.2 'Open Sans Condensed', sans-serif;
 }
 h1,
 h2,
@@ -4665,7 +4662,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Verdana";
+  font-family: "Amatic SC";
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -4679,7 +4676,7 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.26315789;
+  line-height: 1.01052632;
   font-weight: normal;
   border-bottom: 1px solid #666;
   margin-bottom: 23px;
@@ -4697,7 +4694,7 @@ h1 + h2 {
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.6;
+  line-height: 1.28;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #CCC;
@@ -4707,7 +4704,7 @@ h2 + h3 {
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.71428571;
+  line-height: 1.37142857;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
@@ -4717,7 +4714,7 @@ h3 + h4 {
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1;
+  line-height: 1.6;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
@@ -4727,7 +4724,7 @@ h4 + h5 {
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.2;
+  line-height: 1.92;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
@@ -4736,7 +4733,7 @@ h5 + h6 {
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.2;
+  line-height: 1.92;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
@@ -4886,7 +4883,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.71428571;
+  line-height: 1.37142857;
   text-align: left;
   font-style: italic;
 }
@@ -4945,15 +4942,17 @@ hr::after {
 }
 /* Texts */
 a {
+  text-decoration-color: #88ebff;
+}
+a:visited {
   color: #333;
-  text-decoration-color: #7B9769;
 }
 code {
-  background: #b0d996;
-  border: 1px solid #7B9769;
+  background: #707beb;
+  border: 1px solid #88ebff;
 }
 h4 {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #bdff78;
 }
 /**
 * Layout style for general structure of header, navbar, main, footer
@@ -5045,15 +5044,15 @@ h4 {
 }
 .my-navbar li {
   display: inline-block;
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #de99ff;
+  border: 1px solid #bdff78;
   margin-right: 0.5em;
 }
 .rm-default li li {
   border: none;
 }
 .rm-default li ul {
-  border: 1px solid #333;
+  border: 1px solid #bdff78;
 }
 .rm-default ul li {
   box-shadow: none;
@@ -5074,8 +5073,8 @@ h4 {
 }
 /* Breadcrumb */
 .region-breadcrumb {
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #de99ff;
+  border: 1px solid #bdff78;
   display: inline;
   float: left;
   width: 97.91666667%;
@@ -5095,8 +5094,8 @@ h4 {
   width: 97.91666667%;
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #de99ff;
+  border: 1px solid #bdff78;
   padding: 0 0.5em;
 }
 .has-sidebar-left,
@@ -5171,8 +5170,8 @@ h4 {
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
   min-height: 175px;
-  border: 1px solid #333;
-  background: #b0d996;
+  border: 1px solid #bdff78;
+  background: #707beb;
   padding: 0.5rem;
 }
 .footer-column h4:first-of-type {
@@ -5289,3 +5288,52 @@ h4 {
  * My own settings, not currently in their own module.
  */
 /* variables */
+.inner-wrap,
+.footer-column,
+.region-sidebar-right,
+.region-sidebar-left {
+  background-color: #de99ff;
+}
+.inner-wrap-footer,
+.inner-wrap-header,
+.inner-wrap-flash {
+  background-color: transparent;
+}
+.my-navbar li a {
+  font-weight: bold;
+}
+.outer-wrap-header {
+  margin-top: 0.75em;
+}
+.inner-wrap-flash .row {
+  margin-bottom: 6px;
+}
+.region-main {
+  border: none;
+}
+.inner-wrap-main {
+  padding: 0.5em 0;
+  border: 1px solid #bdff78;
+}
+.site-logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.region-after-main {
+  padding: 0.5em;
+}
+.outer-wrap-footer {
+  margin-top: 0.5em;
+}
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v11/TUZyzwprpvBS1izr_vOECuSa.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}

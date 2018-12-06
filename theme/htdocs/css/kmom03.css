@@ -4949,6 +4949,7 @@ a {
   text-decoration-color: #7B9769;
 }
 code {
+  background: #b0d996;
   border: 1px solid #7B9769;
 }
 h4 {
@@ -5010,6 +5011,9 @@ h4 {
   clear: both;
 }
 /* Header */
+.inner-wrap-header .row {
+  max-width: 100%;
+}
 .region-header {
   display: inline;
   float: left;
@@ -5112,6 +5116,7 @@ h4 {
 }
 .region-sidebar-right,
 .region-sidebar-left {
+  padding: 0 0.5em;
   display: inline;
   float: left;
   width: 22.91666667%;
@@ -5123,12 +5128,10 @@ h4 {
 }
 .right,
 .next {
-  display: block;
   float: right;
 }
 .left,
 .previous {
-  display: block;
   float: left;
 }
 /* byline */

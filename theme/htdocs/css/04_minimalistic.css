@@ -4646,18 +4646,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * Base style to affect HTML elements on a general scale.
  */
-/**
- * Base style to affect HTML elements on a general scale.
- */
 * {
   box-sizing: border-box;
 }
 html {
-  background-color: #eee;
+  background-color: #39aea8;
 }
 body {
-  color: #333;
-  font: 16px/1.5 "Helvetica";
+  color: #5B5150;
+  font: 16px/1.5 "'Roboto', sans-serif";
 }
 h1,
 h2,
@@ -4945,15 +4942,15 @@ hr::after {
 }
 /* Texts */
 a {
-  color: #333;
-  text-decoration-color: #7B9769;
+  color: #5B5150;
+  text-decoration-color: #39aea8;
+  font-family: "Verdana";
 }
 code {
-  background: #b0d996;
-  border: 1px solid #7B9769;
+  background: #39aea8;
 }
 h4 {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #5B5150;
 }
 /**
 * Layout style for general structure of header, navbar, main, footer
@@ -5045,15 +5042,15 @@ h4 {
 }
 .my-navbar li {
   display: inline-block;
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #339c97;
+  border: 1px solid #5B5150;
   margin-right: 0.5em;
 }
 .rm-default li li {
   border: none;
 }
 .rm-default li ul {
-  border: 1px solid #333;
+  border: 1px solid #5B5150;
 }
 .rm-default ul li {
   box-shadow: none;
@@ -5074,8 +5071,8 @@ h4 {
 }
 /* Breadcrumb */
 .region-breadcrumb {
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #339c97;
+  border: 1px solid #5B5150;
   display: inline;
   float: left;
   width: 97.91666667%;
@@ -5095,8 +5092,8 @@ h4 {
   width: 97.91666667%;
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
-  background-color: #e7f3df;
-  border: 1px solid #333;
+  background-color: #339c97;
+  border: 1px solid #5B5150;
   padding: 0 0.5em;
 }
 .has-sidebar-left,
@@ -5171,8 +5168,8 @@ h4 {
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
   min-height: 175px;
-  border: 1px solid #333;
-  background: #b0d996;
+  border: 1px solid #5B5150;
+  background: #a2d5ac;
   padding: 0.5rem;
 }
 .footer-column h4:first-of-type {
@@ -5285,7 +5282,61 @@ h4 {
   border: 1px solid #6cbac4;
   color: #111;
 }
+code,
+.rm-default li ul,
+.my-navbar li,
+.region-breadcrumb,
+.region-main,
+.footer-column {
+  border: none;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: none;
+}
+.outer-wrap-header {
+  margin: 0.75em 0;
+}
+.region-after-main {
+  padding: 0.5em;
+}
+.inner-wrap,
+.footer-column,
+.region-sidebar-right,
+.region-sidebar-left {
+  background-color: #339c97;
+}
+.hgrid .region-sidebar-left,
+.vgrid .region-sidebar-left,
+.hgrid .region-sidebar-right,
+.vgrid .region-sidebar-right {
+  background-color: transparent;
+}
+.region-header-col-1,
+.inner-wrap-after-main .region-after-main figure,
+figure {
+  display: none;
+}
+.region-header {
+  margin-top: 0;
+}
+.my-navbar a {
+  padding: 0 0.5rem;
+}
 /**
  * My own settings, not currently in their own module.
  */
 /* variables */
+.outer-wrap-flash {
+  display: none;
+}

@@ -28,6 +28,13 @@ Min testsida!
 
 `code tag`
 
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
 lorem asdlkas döajkdö kasdöl kaölskdöl aököld kalkdlö kamv.,nm nm,qwn qw
 qwe qelö qwkel kqwölek qöwke ölqwke ökqwöke qkwöle klöqwköle klqökeöl q
 lorem asdlkas döajkdö kasdöl kaölskdöl aököld kalkdlö kamv.,nm nm,qwn qw

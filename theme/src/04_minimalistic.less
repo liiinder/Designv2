@@ -1,0 +1,168 @@
+/*!
+ * LESS version of the stylesheet for design kmom03.
+ *
+ * This stylesheet is for the design course and kmom03. Its intention is to
+ * use less and build the style using modules like base, layout, responsive etc.
+ * In this kmom we're going to learn about vertical grid.
+ */
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: @darkGreen;
+}
+
+body {
+    color: @darkGrey;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+/* Texts */
+a {
+    color: @darkGrey;
+    text-decoration-color: @darkGreen;
+    font-family: @fontFamilyHeadings;
+}
+
+code {
+    background: @darkGreen;
+}
+
+h4 {
+    border-bottom: 1px solid @darkGrey;
+}
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+@import "layout/layout.3.less";
+@import "layout/responsive.3.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+// css specifikt för minimalistic för att kunna ta bort saker från layout.3.less
+code,
+.rm-default li ul,
+.my-navbar li,
+.region-breadcrumb,
+.region-main,
+.footer-column {
+    border: none;
+}
+
+// font-families
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    border-bottom: none;
+}
+
+@fontFamilyHeadings: "Verdana";
+@fontFamilyBody:     "'Roboto', sans-serif";
+@fontFamilyCode:     "monospace";
+
+.outer-wrap-header {
+    margin: 0.75em 0;
+}
+
+.region-after-main {
+    padding: 0.5em;
+}
+
+.inner-wrap,
+.footer-column,
+.region-sidebar-right,
+.region-sidebar-left {
+    background-color: @lightGreen;
+}
+
+.hgrid .region-sidebar-left,
+.vgrid .region-sidebar-left,
+.hgrid .region-sidebar-right,
+.vgrid .region-sidebar-right {
+    background-color: transparent;
+}
+
+.region-header-col-1,
+.inner-wrap-after-main .region-after-main figure,
+figure {
+    display: none;
+}
+
+.region-header {
+    margin-top: 0;
+}
+
+.my-navbar a {
+    padding: 0 0.5rem;
+}
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+/* variables */
+@lightGreen: #339c97;
+@primaryGreen: #a2d5ac;
+@darkGreen: #39aea8;
+@lightGrey: #e6efc2;
+@darkGrey: #5B5150;
+@maxWidth: 1100px; // width of page (flash to footer)
+@fontSizeBody: 16px;
+
+// Default grid, change to fit your requirements.
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       12;
+@gridType:      "float"; // "flex"
+
+// Settings for just minimalistic site
+.outer-wrap-flash {
+    display: none;
+}

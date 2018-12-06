@@ -41,6 +41,10 @@
 //
 /* Header */
 //
+.inner-wrap-header .row {
+    max-width: 100%;
+}
+
 .region-header {
     #desinax-vgrid.column(@columns);
     margin-top: 12px;
@@ -144,6 +148,7 @@
 
 .region-sidebar-right,
 .region-sidebar-left {
+    padding: 0 0.5em;
     #desinax-vgrid.column(@columns * 1 / 4);
 }
 
@@ -153,13 +158,13 @@
 
 .right,
 .next {
-    display: block;
+    // display: block;
     float: right;
 }
 
 .left,
 .previous {
-    display: block;
+    // display: block;
     float: left;
 }
 
