@@ -351,9 +351,6 @@ figure.figure img {
   max-width: 100%;
   display: block;
 }
-figure.figure .w50 img {
-  max-width: 50%;
-}
 figure.figure figcaption {
   display: table-caption;
   caption-side: bottom;

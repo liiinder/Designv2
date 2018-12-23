@@ -4745,18 +4745,16 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * Base style to affect HTML elements on a general scale.
  */
-/**
- * Base style to affect HTML elements on a general scale.
- */
 * {
   box-sizing: border-box;
 }
 html {
-  background-color: #eee;
+  background: url(../../htdocs/img/balconies-beach-blue-water-1167021.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 body {
   color: #333;
-  font: 16px/1.5 "Helvetica";
+  font: 16px/1.5 "sans-serif";
 }
 h1,
 h2,
@@ -5045,14 +5043,11 @@ hr::after {
 /* Texts */
 a {
   color: #333;
-  text-decoration-color: #7B9769;
+  text-decoration-color: #3383a4;
 }
 code {
-  background: #b0d996;
-  border: 1px solid #7B9769;
-}
-h4 {
-  border-bottom: 1px solid #333;
+  background: #e7f3df;
+  border: 1px solid #3383a4;
 }
 /**
 * Layout style for general structure of header, navbar, main, footer
@@ -5090,7 +5085,10 @@ h4 {
   margin-right: auto;
   margin-left: auto;
   max-width: 1100px;
+  background-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
+  border-radius: 5px;
 }
 .row {
   display: block;
@@ -5110,31 +5108,16 @@ h4 {
   clear: both;
 }
 /* Header */
-.inner-wrap-header .row {
-  max-width: 100%;
-}
 .region-header {
-  display: inline;
-  float: left;
-  width: 97.91666667%;
-  margin-left: 1.04166667%;
-  margin-right: 1.04166667%;
   margin-top: 12px;
-  margin-left: 0;
+  width: 100%;
 }
 .region-header-col-1 {
-  float: right;
-}
-.region-header-col-1 .site-logo {
   display: none;
 }
 .region-header-col-2 {
-  display: inline;
-  width: 81.25%;
-  margin-left: 1.04166667%;
-  margin-right: 1.04166667%;
-  float: left;
-  margin-right: 0;
+  width: 100%;
+  text-align: center;
 }
 .region-header-col-3 {
   display: none;
@@ -5144,15 +5127,25 @@ h4 {
 }
 .my-navbar li {
   display: inline-block;
-  background-color: #e7f3df;
-  border: 1px solid #333;
-  margin-right: 0.5em;
+}
+.inner-wrap-header {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+ul .my-navbar {
+  width: 100%;
+}
+.rm-default a {
+  font-size: 2em;
+  padding: 0.5em;
 }
 .rm-default li li {
   border: none;
 }
 .rm-default li ul {
-  border: 1px solid #333;
+  background-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .rm-default ul li {
   box-shadow: none;
@@ -5161,20 +5154,11 @@ h4 {
   text-decoration: none;
 }
 /* Flash */
-.region-flash {
-  display: inline;
-  float: left;
-  width: 97.91666667%;
-  margin-left: 1.04166667%;
-  margin-right: 1.04166667%;
-}
-.region-flash img {
-  max-width: 100%;
+.outer-wrap-flash {
+  display: none;
 }
 /* Breadcrumb */
 .region-breadcrumb {
-  background-color: #e7f3df;
-  border: 1px solid #333;
   display: inline;
   float: left;
   width: 97.91666667%;
@@ -5188,14 +5172,15 @@ h4 {
   display: inline-block;
 }
 /* Main */
+.inner-wrap-main .row {
+  padding: 0.5em 0;
+}
 .region-main {
   display: inline;
   float: left;
   width: 97.91666667%;
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
-  background-color: #e7f3df;
-  border: 1px solid #333;
   padding: 0 0.5em;
 }
 .has-sidebar-left,
@@ -5216,6 +5201,7 @@ h4 {
 .region-sidebar-right,
 .region-sidebar-left {
   padding: 0 0.5em;
+  margin-top: 24px;
   display: inline;
   float: left;
   width: 22.91666667%;
@@ -5234,6 +5220,9 @@ h4 {
   float: left;
 }
 /* byline */
+.inner-wrap-after-main .row {
+  padding: 0.5em;
+}
 .inner-wrap-after-main .region-after-main h1:first-of-type {
   display: inline;
   float: left;
@@ -5270,8 +5259,6 @@ h4 {
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
   min-height: 175px;
-  border: 1px solid #333;
-  background: #b0d996;
   padding: 0.5rem;
 }
 .footer-column h4:first-of-type {
@@ -5285,6 +5272,7 @@ h4 {
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
   text-align: center;
+  font-size: 2rem;
 }
 .hgrid .region-breadcrumb,
 .vgrid .region-breadcrumb,
@@ -5388,3 +5376,11 @@ h4 {
  * My own settings, not currently in their own module.
  */
 /* variables */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: 1px solid #333;
+}

@@ -4756,7 +4756,7 @@ html {
 }
 body {
   color: #333;
-  font: 16px/1.5 "Helvetica";
+  font: 16px/1.5 "sans-serif";
 }
 h1,
 h2,
@@ -5048,7 +5048,7 @@ a {
   text-decoration-color: #7B9769;
 }
 code {
-  background: #b0d996;
+  background: #e7f3df;
   border: 1px solid #7B9769;
 }
 h4 {
@@ -5144,7 +5144,7 @@ h4 {
 }
 .my-navbar li {
   display: inline-block;
-  background-color: #e7f3df;
+  background-color: #b0d996;
   border: 1px solid #333;
   margin-right: 0.5em;
 }
@@ -5173,7 +5173,7 @@ h4 {
 }
 /* Breadcrumb */
 .region-breadcrumb {
-  background-color: #e7f3df;
+  background-color: #b0d996;
   border: 1px solid #333;
   display: inline;
   float: left;
@@ -5194,7 +5194,7 @@ h4 {
   width: 97.91666667%;
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
-  background-color: #e7f3df;
+  background-color: #b0d996;
   border: 1px solid #333;
   padding: 0 0.5em;
 }
@@ -5271,7 +5271,7 @@ h4 {
   margin-right: 1.04166667%;
   min-height: 175px;
   border: 1px solid #333;
-  background: #b0d996;
+  background: #e7f3df;
   padding: 0.5rem;
 }
 .footer-column h4:first-of-type {
@@ -5388,3 +5388,21 @@ h4 {
  * My own settings, not currently in their own module.
  */
 /* variables */
+.footer-column {
+  background-color: #b0d996;
+}
+html {
+  background-color: #e7f3df;
+  background-image: linear-gradient(#eee, #7B9769);
+  min-height: 100%;
+}
+.wrap-sidebar {
+  border: 1px solid #333;
+  background-color: #b0d996;
+}
+.my-navbar a {
+  font-weight: bold;
+}
+.site-footer {
+  font-size: 2rem;
+}

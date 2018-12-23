@@ -15,6 +15,12 @@ views:
             meta: 
                 type: single
                 route: block/om-redovisa
+    flash:
+        region: flash
+        template: anax/v2/image/default
+        data:
+            src: "image/theme/dbwebb.jpg"
+            # src: "image/theme/dbwebb.jpg?width=1100&height=150&crop-to-fit&area=0,0,30,0"
 ---
 [FIGURE src=image/theme/about.jpg?w=300 alt="En designbild." class="right"]
 
