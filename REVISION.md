@@ -10,4 +10,6 @@ v1.0.0 (2018-11-14)
 v6.0.0 (...)
 ---------------
 
-To be continued
+v10.0.0
+---------------
+Just added a report and the kmom10 text
